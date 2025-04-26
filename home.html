@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Personal Portfolio of a Web Developer">
+  <meta name="keywords" content="HTML, CSS, JavaScript, Portfolio">
+  <meta name="author" content="Your Name">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Name | Portfolio</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Internal CSS -->
+  <style>
+    h2.intro {
+      color: #0ea5e9;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to My Portfolio</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Me</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="contactform.html">Contact</a>
+    <a href="survey.html">Survey</a>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-text">
+      <p>Hello! I'm <strong>Jackson Didas</strong>, a passionate software engineer.</p>
+    </div>
+  </section>
+
+  <main>
+    <section>
+      <h2 class="intro">Let me show you what I can build</h2>
+      <p>I create modern websites and apps that solve real-world problems and also doig Forex market analysis trading for my living.</p>
+    </section>
+
+    <!-- Inline CSS for demo -->
+    <section style="padding: 1rem; background-color: #ffffff;">
+      <h3>Explore my work</h3>
+      <ul>
+        <li>Mobile App Development</li>
+        <li>Web Design & Development</li>
+        <li>Forex Market analysis</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer style="text-align: center; padding: 1rem; background: #1f2937; color: white;">
+    &copy; 2025 Jackson Didas. All rights reserved.
+  </footer>
+
+  <!-- JavaScript for greeting (we’ll add actual script in next step) -->
+  <script>
+    window.onload = function() {
+      const hour = new Date().getHours();
+      let greet;
+      if (hour < 12) greet = "Good Morning!";
+      else if (hour < 18) greet = "Good Afternoon!";
+      else greet = "Good Evening!";
+      alert(greet + " Welcome to my portfolio!");
+    };
+  </script>
+</body>
+</html>

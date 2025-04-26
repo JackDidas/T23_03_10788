@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Survey form for personal portfolio" />
+  <meta name="keywords" content="Survey, Web Development, Feedback" />
+  <meta name="author" content="Your Name" />
+  <title>Survey - My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Website Feedback Survey</h1>
+    <p>Please fill out this form to help me improve!</p>
+  </header>
+
+  <main>
+    <form id="surveyForm" action="#" method="post">
+      <fieldset>
+        <legend>1. How did you find my website?</legend>
+        <label><input type="radio" name="source" value="search" required> Search Engine</label><br>
+        <label><input type="radio" name="source" value="social"> Social Media</label><br>
+        <label><input type="radio" name="source" value="friend"> From a Friend</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>2. What features do you like? (Check all that apply)</legend>
+        <label><input type="checkbox" name="features" value="design"> Design</label><br>
+        <label><input type="checkbox" name="features" value="speed"> Speed</label><br>
+        <label><input type="checkbox" name="features" value="content"> Content</label><br>
+        <label><input type="checkbox" name="features" value="navigation"> Navigation</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>3. Any Suggestions or Feedback?</legend>
+        <textarea name="feedback" rows="5" cols="40" placeholder="Write your thoughts here..." required></textarea>
+      </fieldset>
+
+      <fieldset>
+        <legend>4. Your Contact Info</legend>
+        <label for="email">Email (optional):</label>
+        <input type="email" id="email" name="email" placeholder="jacksondidas2004@gmail.com" /><br><br>
+
+        <label for="name">Name (optional):</label>
+        <input type="text" id="name" name="name" />
+      </fieldset>
+
+      <button type="submit">Submit Survey</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Jackson Didas</p>
+  </footer>
+
+  <script>
+    // Basic client-side validation example
+    document.getElementById("surveyForm").addEventListener("submit", function (e) {
+      const feedback = document.querySelector("textarea[name='feedback']").value.trim();
+      if (!feedback) {
+        alert("Please provide your feedback.");
+        e.preventDefault();
+      }
+    });
+  </script>
+</body>
+</html>
