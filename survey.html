@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,11 +10,24 @@
   <title>Survey - My Portfolio</title>
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
   <header>
-    <h1>Website Feedback Survey</h1>
-    <p>Please fill out this form to help me improve!</p>
+    <div class="logo">
+      <h1>JackDidas</h1>
+    </div>
+
+    <div class="navme">
+      <nav>
+        <a href="home.html">Home</a>
+        <a href="about.html">About Me</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contactform.html">Contact</a>
+        <a href="survey.html">Survey</a>
+      </nav>
+    </div>
   </header>
+
 
   <main>
     <form id="surveyForm" action="#" method="post">
@@ -55,7 +69,7 @@
   </footer>
 
   <script>
-    // Basic client-side validation example
+
     document.getElementById("surveyForm").addEventListener("submit", function (e) {
       const feedback = document.querySelector("textarea[name='feedback']").value.trim();
       if (!feedback) {
@@ -65,4 +79,5 @@
     });
   </script>
 </body>
+
 </html>

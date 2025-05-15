@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="description" content="Contact Me - Personal Portfolio">
@@ -9,13 +10,28 @@
   <title>Contact Me</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body onload="greetUser()">
 
   <header>
-    <h1>Contact Me</h1>
+    <div class="logo">
+      <h1>JackDidas</h1>
+    </div>
+
+    <div class="navme">
+      <nav>
+        <a href="home.html">Home</a>
+        <a href="about.html">About Me</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contactform.html">Contact</a>
+        <a href="survey.html">Survey</a>
+      </nav>
+    </div>
   </header>
 
-  <main>
+
+  <main class="conmain">
+
     <form id="contactForm" onsubmit="return validateContactForm()">
       <label for="name">Name:<span>*</span></label>
       <input type="text" id="name" name="name" required>
@@ -31,8 +47,39 @@
 
       <button type="submit">Submit</button>
     </form>
+
+    <section id="contact">
+      <h1>Contact Me</h1>
+      <p>You can also visit me at this location(Tanzania,Dodoma) or through this email:jacksondidas2004@gmail.com</p>
+
+      <iframe src="https://www.google.com/maps/embed?pb=..." width="30%" height="400" style="border:0;"
+        allowfullscreen="" loading="lazy">
+      </iframe>
+    </section>
+
+
+
+    <button id="theme-toggle">Switch Theme</button>
+
+    <div class="content">
+      <h1></h1>
+      <p></p>
+    </div>
   </main>
 
+
   <script src="script.js"></script>
+  <script>
+    const toggleBtn = document.getElementById("theme-toggle");
+    toggleBtn.addEventListener("click", () => {
+      document.body.classList.toggle("dark-theme");
+      if (document.body.classList.contains("dark-theme")) {
+        toggleBtn.textContent = "Switch to Light Mode";
+      } else {
+        toggleBtn.textContent = "Switch to Dark Mode";
+      }
+    });
+  </script>
 </body>
+
 </html>
