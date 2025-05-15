@@ -1,4 +1,4 @@
-Project: Personal Portfolio Website
+Project: Personal Portfolio Website Assignment
 
 Tools Used
 -HTML5
