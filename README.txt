@@ -31,6 +31,7 @@ Solved with responsive CSS (flexbox and media queries)
 Summary
 This project helped me practice web design using HTML, CSS, and JavaScript. It shows my skills and gives users an easy way to view my work and contact me.
 
-Live Link from GitHub
+Live Link from GitHub:
+https://github.com/JackDidas/T23_03_10788.git
 
 
